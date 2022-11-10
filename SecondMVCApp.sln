@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondMVCApp", "SecondMVCApp.csproj", "{5A0F56B7-6CD6-4AB8-ABA8-95FB8A5F698E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A0F56B7-6CD6-4AB8-ABA8-95FB8A5F698E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0F56B7-6CD6-4AB8-ABA8-95FB8A5F698E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0F56B7-6CD6-4AB8-ABA8-95FB8A5F698E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0F56B7-6CD6-4AB8-ABA8-95FB8A5F698E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33450E36-0857-4D9F-8678-81257F6CF02F}
+	EndGlobalSection
+EndGlobal

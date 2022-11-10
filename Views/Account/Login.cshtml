@@ -1,0 +1,22 @@
+﻿
+@model User
+
+
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body>
+        <form method="post" asp-controller="Account" asp-action="Login" >
+
+            Class Name = @Model.ClassName
+            <br />
+            
+        UserName: <input type="text" asp-for="@Model.UserName" />
+        <br />
+        Password: <input type="text" asp-for="@Model.Password" />
+        <br />
+        <button>Submit</button>
+        </form>
+    </body>
+</html>
