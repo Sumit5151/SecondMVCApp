@@ -1,0 +1,42 @@
+﻿@model List<Employee>
+
+
+
+    <html>
+        <head>
+            <title>Employee List</title>
+        </head>
+
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <tr/>
+                </thead>
+                <tbody>
+
+
+                    @{
+                foreach(Employee emp in Model)
+                {
+                  <tr>
+                       <td>@emp.Id</td>
+                       <td>@emp.Name</td>
+                       <td>@emp.Address</td>
+                   </tr> 
+                }
+            }
+
+                   
+                </tbody>
+            </table>
+
+            <a href="/Employee/Create">Create Employee</a>
+
+
+
+        </body>
+    </html>

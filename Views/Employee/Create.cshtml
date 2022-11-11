@@ -1,0 +1,24 @@
+﻿@model Employee
+
+
+<html>
+    <head>
+        <title>Create Employee page</title>
+    </head>
+    <body>
+        
+        <form method="post" asp-controller="Employee" asp-action="Create">
+            Id: <input type="text" asp-for="@Model.Id" />
+            <br />
+            Name:<input type="text" asp-for="@Model.Name" />
+            <br />
+            Address<input type="text" asp-for="@Model.Address" />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+
+
+
+       
+    </body>
+</html>
