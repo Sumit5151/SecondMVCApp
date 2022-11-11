@@ -36,13 +36,15 @@ namespace SecondMVCApp.Controllers
             return View(user);
         }
 
+
+        // This is Comment
        [HttpPost]
         public IActionResult Login(User user)
         {
                 
             if(user.UserName == "Test" && user.Password =="test")
             {
-                return RedirectToAction(nameof(Dashboard));
+                return RedirectToAction(nameof(Dashboard)); 
             }
             else
             {
