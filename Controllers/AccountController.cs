@@ -39,10 +39,10 @@ namespace SecondMVCApp.Controllers
        [HttpPost]
         public IActionResult Login(User user)
         {
-
+                
             if(user.UserName == "Test" && user.Password =="test")
             {
-                return RedirectToAction("Dashboard");
+                return RedirectToAction(nameof(Dashboard));
             }
             else
             {
