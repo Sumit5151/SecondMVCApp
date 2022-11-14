@@ -1,0 +1,23 @@
+﻿@model Doctor
+
+
+<html>
+<head>
+    <title>Create Doctor page</title>
+</head>
+<body>
+    <form method="post" asp-action="Create" asp-controller="Doctor">
+    ID:
+    <input type="text" asp-for="@Model.Id"/>
+    <br />
+    Name:
+    <input type="text" asp-for="@Model.Name" />
+    <br />
+    Qualificaton:
+    <input type="text" asp-for="@Model.Qualification"/>
+    <br />
+    <button>Submit</button> 
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿@model List<Doctor>
+
+
+<html>
+<head>
+    <title> Doctor List page</title>
+</head>
+
+<body>
+    <h1> Doctors Index Page</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name
+                <th>
+                    Qualification
+                </th>
+
+                 <th>
+                    Action
+                </th>
+                 <th>
+                    Action
+                </th>
+                
+            </tr>
+        </thead>
+
+
+
+        <tbody>
+
+            @{
+                foreach (Doctor doctor in Model)
+                {
+                    <tr>
+                        <td>@doctor.Id</td>
+                        <td>@doctor.Name</td>
+                        <td>@doctor.Qualification</td>
+
+
+                        <td> <a href="/Doctor/Delete/@doctor.Id">Delete</a>  </td>
+
+
+                         <td> <button> Edit</button></td>
+                    </tr>
+                }
+
+            }
+
+        </tbody>
+    </table>
+
+    <a href="/Doctor/Create"> Add New Doctor</a>
+
+
+</body>
+</html>
+
