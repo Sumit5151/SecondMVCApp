@@ -1,0 +1,66 @@
+﻿@model List<User>
+
+<html>
+<head>
+    <title>User List</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <h1>List of Users</h1>
+    <table class="table tbl-primary">
+        <thead>
+            <tr>
+                <td>
+                    Id
+                </td>
+                <td>
+                    UserName
+                </td>
+                <td>
+                    Password
+                </td>
+                <td>
+                    ClassName
+                </td>
+                 <td>
+                    Action
+                </td>
+                <td>
+                    Action
+                </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @{
+
+                foreach (User user in Model)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.UserName</td>
+                        <td>@user.Password</td>
+                        <td>@user.ClassName</td>
+                         <td>
+                         <a href=/User/Delete/@user.Id>Delete</a>
+                         </td>
+                          <td>
+                          <a href=/User/Update/@user.Id>Update</a>
+                          </td>
+                    </tr>
+                }
+
+            }
+
+
+
+
+
+        </tbody>
+
+    </table>
+
+    <a href="/User/Create">Add New User</a>
+</body>
+</html>

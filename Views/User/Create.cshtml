@@ -1,0 +1,59 @@
+﻿@model User
+
+
+<html>
+    <head>
+        <title>
+            Create User
+        </title>        
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </head>
+    <body>
+        <style>
+
+
+
+        </style>
+        <h1>Create New User</h1>
+
+
+        <div class="container">
+            
+            <div class="row">
+                <form method="post" asp-action="Create" asp-controller="User">
+                <div class="col-md-6  offset-3">
+
+                    <div class="form-group">
+                        <label>User Id</label>
+                        <input type ="text" asp-for="@Model.Id" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>UserName</label>
+                        <input type ="text" asp-for="@Model.UserName" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type ="text" asp-for="@Model.Password" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>ClassName</label>
+                        <input type ="text" asp-for="@Model.ClassName" class="form-control" />
+                    </div>
+
+                    <div class="form-group">    
+                        <button class="btn btn-primary">Submit</button>
+                    
+                    </div>
+
+
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
