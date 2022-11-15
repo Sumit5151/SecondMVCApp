@@ -5,6 +5,7 @@
     <title>User List</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+   
 </head>
 <body>
     <h1>List of Users</h1>
@@ -43,7 +44,7 @@
                         <td>@user.Password</td>
                         <td>@user.ClassName</td>
                          <td>
-                         <a href=/User/Delete/@user.Id>Delete</a>
+                         <a href=/User/Delete/@user.Id onclick="return confirm('Are you sure to delete this item?') ;">Delete</a>
                          </td>
                           <td>
                           <a href=/User/Update/@user.Id>Update</a>

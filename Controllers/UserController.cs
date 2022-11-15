@@ -52,15 +52,34 @@ namespace SecondMVCApp.Controllers
 
 
         [HttpGet]
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
-            return View();
+            User user = Users.FirstOrDefault(user => user.Id == id);
+
+            return View(user);
         }
 
         [HttpPost]
         public IActionResult Update(User user)
         {
-            return View();
+
+            //User userToUpdte1 = new User();
+            //foreach (var u in Users)
+            //{
+            //    if (u.Id == user.Id)
+            //    {
+            //        userToUpdte1 = u;
+            //    }
+            //}
+
+
+            User userToUpdate = Users.FirstOrDefault(u => u.Id == user.Id);
+
+            userToUpdate.UserName= user.UserName;
+            userToUpdate.Password= user.Password;
+            userToUpdate.ClassName= user.ClassName;
+
+            return RedirectToAction("Index");
         }
 
 
